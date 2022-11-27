@@ -1,0 +1,24 @@
+﻿
+@model List<Konzerthaus.Domain.Model.Concert>
+
+<h3>All Concerts</h3>
+
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Concert Name</td>
+            <td>Seat</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Konzerthaus.Domain.Model.Concert k in Model)
+        {
+        <tr>
+            <td>@k.Id</td>
+            <td>@k.</td>
+            <td>@k.Seat</td>
+        </tr>
+        }
+    </tbody>
+</table>
